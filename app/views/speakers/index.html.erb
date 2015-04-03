@@ -1,0 +1,10 @@
+<h1>Speakers</h1>
+<div id="speakers">
+<% @speakers.each do |speaker| %>
+<h2>
+<%= link_to speaker.name, speaker %>
+</h2>
+<div class="info">
+by <%= article.headline %>
+</div>
+<% end %>
