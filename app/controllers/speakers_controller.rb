@@ -5,6 +5,19 @@ class SpeakersController < ApplicationController
     @speakers = Speaker.all
   end
 
+  def new
+    @speaker = Speaker.new
+  end
+
+def create
+    @speaker = Speaker.new
+    if @speaker.save
+      redirect_to root_url, notice: 'Thank you for adding your speaker profile!'
+    else
+      render 'new'
+    end
+  end
+
   def show
     @speaker = Speaker.find(params[:id])
   end
@@ -21,4 +34,9 @@ class SpeakersController < ApplicationController
       render 'edit'
     end
   end
+private
+  def speaker_params
+    params.require(:speaker).permit(:name, :headline, :description)
+  end
+
 end
