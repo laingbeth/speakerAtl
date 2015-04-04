@@ -1,17 +1,24 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A speaker information platform:<br>
+Currently there are various speaker bureaus for professional speakers, who are mostly professionally 
+represented (paid) and there are sites for specific areas, if you know where to look, but there is no 
+free reference point for finding speakers, especially free speakers, for events or meetings.  
+This is a resource for eople who are organizing events, anything from a Scout meeting to Civic Association 
+or a meetup groups, can search to find potential speakers.  This site provides an initial amount of 
+information about a speaker and provides contact information.  This is also a service to experts who are
+just starting out and want to build an experience base of public speaking. 
+
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.1.2
 
-* System dependencies
+* Rails 4
 
-* Configuration
+* postgresql
 
-* Database creation
+* 
 
 * Database initialization
 
