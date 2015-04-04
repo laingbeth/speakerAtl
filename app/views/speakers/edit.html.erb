@@ -1,6 +1,32 @@
-<h1><%= @speaker.name %></h1>
-<%= @speaker.content %>
-<p>
-<%= link_to "Edit", edit_speaker_path(@speaker) %> |
-<%= link_to "Browse Speakers", speakers_path %>
-</p>
+<h1>Edit Speaker Profile</h1>
+<%= form_for @speaker do |f| %>
+<% if @speaker.errors.any? %>
+<div class="error_messages">
+<h2><%= pluralize(@speaker.errors.count, "error") %> prohibited this speaker profile from being saved:</h2>
+<ul>
+<% @speaker.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+
+</div>
+<% end %>
+<div class="field">
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+  </div>
+  <div class="field">
+  <%= f.label :headline %><br>
+  <%= f.text_field :headline %>
+  </div>
+  <div class="field">
+  <%= f.label :description %><br>
+  <%= f.text_field :description %>
+  </div>
+
+
+<div class="actions"><%= f.submit %></div>
+<% end %>
+
+
+
