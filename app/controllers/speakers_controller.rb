@@ -34,4 +34,9 @@ def create
       render 'edit'
     end
   end
+private
+  def speaker_params
+    params.require(:speaker).permit(:name, :headline, :description)
+  end
+
 end
