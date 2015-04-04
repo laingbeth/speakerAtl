@@ -1,6 +1,6 @@
 == README
 
-Speaker information platform
+A speaker information platform:<br>
 Currently there are various speaker bureaus for professional speakers, who are mostly professionally 
 represented (paid) and there are sites for specific areas, if you know where to look, but there is no 
 free reference point for finding speakers, especially free speakers, for events or meetings.  
